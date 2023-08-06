@@ -1,0 +1,16 @@
+@import "global.css";
+@import "main.css";
+
+#imed1316-gallery {
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+}
+
+.burger-button {
+  list-style-type: none;
+}
+
+.burger-button :hover {
+  text-decoration: none;
+}

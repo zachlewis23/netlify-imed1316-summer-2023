@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vacation Destinations</title>
+
+    <!-- Bootstrap CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts CDN CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Icon CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- FontAwesome CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- FancyApp CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <!-- AOS CDN CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="/css/feedback.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Begin Offcanvas -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            Let us help you prepare your dream vacation
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <hr size="5px" width="auto" color="black" />
+        <div class="burger-button">
+          <li class="nav-item">
+            <a class="nav-link" href="schedule.html">Your Schedule</a>
+          </li>
+        </div>
+
+        <hr size="2px" width="auto" color="black" />
+
+        <div class="offcanvas-body">
+          <div class="burger-button">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Flights</a>
+            </li>
+            <br />
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hotels</a>
+            </li>
+            <br />
+            <li class="nav-item">
+              <a class="nav-link" href="#">Destinations</a>
+            </li>
+            <br />
+            <li class="nav-item">
+              <a class="nav-link" href="#">Road Transportation</a>
+            </li>
+            <br />
+            <li class="nav-item">
+              <a class="nav-link" href="#">Countries</a>
+            </li>
+            <br />
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+
+            <hr size="2px" width="auto" color="black" />
+
+            <div>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Things to do
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Popular Destinations</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Nearby</a></li>
+                <li><a class="dropdown-item" href="#">Entertainment</a></li>
+                <li><a class="dropdown-item" href="#">Food</a></li>
+                <li><a class="dropdown-item" href="#">Mountains</a></li>
+                <li><a class="dropdown-item" href="#">Beaches</a></li>
+                <li><a class="dropdown-item" href="#">Beaches</a></li>
+                <li><a class="dropdown-item" href="#">Deserts</a></li>
+                <li><a class="dropdown-item" href="#">More</a></li>
+              </ul>
+            </div>
+
+            <hr size="2px" width="auto" color="black" />
+          </div>
+        </div>
+      </div>
+      <!-- End Offcanvas -->
+
+      <!-- Begin Google Icons -->
+      <div class="container text-center top-logo">
+        <div clas="row">
+          <div class="col-12-md-6">
+            <span class="material-symbols-outlined">
+              flightsmode
+            </span>
+            <span class="material-symbols-outlined">
+              <a
+                data-bs-toggle="offcanvas"
+                href="#offcanvasExample"
+                role="button"
+                aria-controls="offcanvasExample"
+              >
+                menu
+              </a>
+            </span>
+          </div>
+          <div class="col-12-md-6">
+            <span id="my-google-font">Vacation Destinations</span>
+          </div>
+        </div>
+      </div>
+      <!-- End Google Icons -->
+
+      <!-- Top Navbar Begins -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!--<a class="navbar-brand" href="#">Navbar</a>-->
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="form.html">Start a Trip</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Travel Stories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Top Destinations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Deals
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Flights on sale</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cheap destinations</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">More deals</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Top Navbar Ends -->
+    </header>
+    <main>
+      <br />
+      <div class="container isotope-filter">
+        <!--begin filters-->
+        <div class="button-group filters-button-group">
+          <button
+            class="button is-checked btn-isotope btn btn-success"
+            data-filter="*"
+          >
+            Show all
+          </button>
+          <button
+            class="button is-checked btn-isotope btn btn-primary"
+            data-filter=".5"
+          >
+            5-stars
+          </button>
+          <button
+            class="button is-checked btn-isotope btn btn-primary"
+            data-filter=".4"
+          >
+            4-stars
+          </button>
+          <button
+            class="button is-checked btn-isotope btn btn-primary"
+            data-filter=".3"
+          >
+            3-stars
+          </button>
+          <button
+            class="button is-checked btn-isotope btn btn-primary"
+            data-filter=".2"
+          >
+            2-stars
+          </button>
+          <button
+            class="button is-checked btn-isotope btn btn-primary"
+            data-filter=".1"
+          >
+            1-stars
+          </button>
+        </div>
+        <!--end filter-->
+
+        <!--begin reviews-->
+        <div class="row">
+          <div class="grid">
+            <div
+              class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <div class="bubble element-item 5">
+                <p>
+                  From the moment I stepped onto the plane to the time I
+                  returned home, every aspect of my trip was well-coordinated
+                  and stress-free. The arrangements were flawless, and I never
+                  encountered any issues with the bookings or reservations. It
+                  truly allowed me to enjoy my vacation without any worries.
+                </p>
+                <!-- stars -->
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                />
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <div class="bubble element-item 3">
+                <p>
+                  The pricing was average, and I wasn't particularly impressed
+                  with the deals offered. I found better offers on other
+                  vacation websites and travel agencies for similar packages.
+                  The website could do more to provide competitive pricing and
+                  exclusive deals to attract more customers.
+                </p>
+                <!-- stars -->
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                />
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <div class="bubble element-item 5">
+                <p>
+                  The website's user interface is incredibly intuitive and easy
+                  to navigate. Booking my vacation package was a breeze, and I
+                  appreciated the extensive search filters that allowed me to
+                  customize my trip to perfection. Within minutes, I had
+                  everything sorted, from flights and accommodation to exciting
+                  activities.
+                </p>
+                <!-- stars -->
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                />
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <div class="bubble element-item 4">
+                <p>
+                  Thanks to this vacation website, I had the opportunity to
+                  engage in unique and exciting experiences at my chosen
+                  destination. They provided insightful recommendations for
+                  local attractions, tours, and activities that enriched my trip
+                  and left me with cherished memories.
+                </p>
+                <!-- stars -->
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                />
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <div class="bubble element-item 1">
+                <p>
+                  I had by far the worst vacation ever. The activities and
+                  recommendations provided by the website were lackluster and
+                  didn't offer anything unique or exciting. I had to do
+                  additional research on my own to find more interesting things
+                  to do during my vacation. Never using this website again.
+                </p>
+                <!-- stars -->
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                />
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <div class="bubble element-item 4">
+                <p>
+                  The website's interface is generally straightforward to use,
+                  though I did encounter a few minor hiccups during my booking
+                  process. While it was easy to search for destinations and
+                  filter options, the navigation could be smoother.
+                  Nevertheless, I managed to book my trip without significant
+                  issues.
+                </p>
+                <!-- stars -->
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                />
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <div class="bubble element-item 2">
+                <p>
+                  During my trip, things went relatively smoothly. The
+                  reservations were in order, and the accommodations were
+                  satisfactory. However, there was nothing exceptional about the
+                  travel experience that stood out. It felt like a
+                  run-of-the-mill vacation without any extra touches or
+                  memorable elements.
+                </p>
+                <!-- stars -->
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                />
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <div class="bubble element-item 5">
+                <p>
+                  What sets this website apart is the fantastic deals it offers.
+                  I was pleasantly surprised by the affordability of the
+                  vacation packages, especially considering the high-quality
+                  accommodations and services provided. It's evident that they
+                  have strong partnerships with top-tier hotels and airlines.
+                </p>
+                <!-- stars -->
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                />
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <div class="bubble element-item 5">
+                <p>
+                  I recently used this vacation website to plan a much-needed
+                  getaway, and I must say it exceeded all my expectations! From
+                  start to finish, the experience was nothing short of
+                  exceptional, earning this platform a well-deserved 5-star
+                  rating.
+                </p>
+                <!-- stars -->
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                />
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <div class="bubble element-item 4">
+                <p>
+                  This vacation website offers a diverse range of destinations,
+                  catering to various travel preferences. I appreciated the
+                  variety of options available, allowing me to choose a location
+                  that suited my interests.
+                </p>
+                <!-- stars -->
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+                />
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end reviews-->
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!--comment-->
+      <form
+        name="web-form"
+        enctype="multipart/form-date"
+        class="needs-validation"
+        novalidate
+      >
+        <div calss="col-12">
+          <label for="about-you">Tell us what you think</label>
+          <textarea
+            name="about_you"
+            id="about-you"
+            cols="50%"
+            row="7"
+            class="form-control"
+          ></textarea>
+          <div class="valid-feedback">Thank you</div>
+        </div>
+
+        <div
+          class="col-12 col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4"
+        >
+          <select name="t_shirt" id="t-shirt" required class="form-select">
+            <option value="">Select Rating</option>
+            <option value="1-stars">1-stars</option>
+            <option value="2-stars">2-stars</option>
+            <option value="3-stars">3-stars</option>
+            <option value="4-stars">4-stars</option>
+            <option value="5-stars">5-stars</option>
+          </select>
+        </div>
+
+        <!--end comment-->
+        <div class="col-12">
+          <input
+            type="submit"
+            name="submit"
+            value="Submit Now"
+            class="submit btn btn-outline-primary"
+          />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <!--begin footer-->
+      <div class="container-fluid text-center footer-row">
+        <div class="row">
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <a href="#">About Us</a>
+          </div>
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <a href="feedback.html">Write a Review</a>
+          </div>
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <a href="#">Help/FAQ</a>
+          </div>
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <a href="#">Use a Coupon</a>
+          </div>
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div
+            class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2"
+          >
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <a href="https://www.facebook.com">
+              <i class="fa-brands fa-facebook fa-social-media"></i>
+            </a>
+            <a href="https://www.instagram.com">
+              <i class="fa-brands fa-instagram fa-social-media"></i>
+            </a>
+            <a href="https://www.twitter.com">
+              <i class="fa-brands fa-twitter fa-social-media"></i>
+            </a>
+            <a href="https://www.youtube.com">
+              <i class="fa-brands fa-youtube fa-social-media"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--end footer-->
+    </footer>
+
+    <!-- Begin JS Section -->
+    <section>
+      <!-- JQuery CDN -->
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+
+      <!-- Bootstrap JS CDN -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"
+      ></script>
+
+      <!-- FancyApp CDN JS -->
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+      <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+          //
+        });
+      </script>
+
+      <!-- AOS JS CDN -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+      <!--isotope js cdn-->
+      <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+      <!-- Local Javascript -->
+      <script src="/js/scripts.js"></script>
+    </section>
+
+    <!-- Begin slick-theme.css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- End slick-theme.css -->
+
+    <!-- Begin Slick Slider-->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- End Slick Slider -->
+
+    <!-- End JS Section -->
+  </body>
+</html>
